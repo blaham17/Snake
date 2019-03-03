@@ -1,4 +1,5 @@
  Emulator hry Snake
+ Funguje pro Python 3.6.x a PyQt5
  
  Ovládání: w a s d
  Hlava hada je modra, zbytek hada je svetle modry.
