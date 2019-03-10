@@ -1,7 +1,7 @@
  Emulator hry Snake
  Funguje pro Python 3.6.x a PyQt5
  
- Ovládání: w a s d
+ Ovládání: W,A,S,D nebo pomoci Sipek
  Hlava hada je modra, zbytek hada je svetle modry.
  Jidlo je cervene.
  Prekazky jsou cerne.
