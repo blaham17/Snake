@@ -1,4 +1,5 @@
  Emulator hry Snake
+ 
  Funguje pro Python 3.6.x a PyQt5
  
  Ovládání: W,A,S,D nebo pomoci Sipek
