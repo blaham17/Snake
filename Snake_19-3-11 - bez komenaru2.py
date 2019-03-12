@@ -15,7 +15,7 @@ class Snake(QWidget):
     def Setup(self, n, p):
         self.snake_x = 4
         self.snake_y = 4
-        self.level = 4
+        self.level = 0
         self.snake_length = self.level + 2
         self.mapa_0()
         self.pole[self.snake_y][self.snake_x] = 1
