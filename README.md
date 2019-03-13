@@ -1,14 +1,14 @@
- Emulator hry Snake 
+ Emulátor hry Snake 
  [Funguje pro Python 3.6.8 a PyQt5]
  
- Manual pro uzivatele:
+ Stručný manuál (úplný je v Dokumentaci) pro uživatele:
  
- Ovládání: W,A,S,D nebo pomoci Sipek
- Hlava hada je modra, zbytek hada je svetle modry.
- Jidlo je cervene.
- Prekazky jsou cerne.
+ Ovládání: W,A,S,D nebo pomocí Šipek
+ Hlava hada je modrá, zbytek hada je světle modrý.
+ Jídlo je červené.
+ Překážky jsou černé.
  
- Po snezeni jidla se had prodlouzi o jeden clanek a ke skore se pricte odpovidajici pocet bodu (v zavislosti na urovni) a zvysi se rychlost.
- Kazdych pet urovni se objevi nova mapa (rychlost se o neco snizi)
+ Po snězení jídla se had prodlouží o jeden článek a ke skóre se přičte odpovídající počet bodů (v závislosti na současné úrovni) a zvýší se rychlost.
+ Kazdych 5 úrovní se objeví nová mapa (rychlost se o něco sníží) - od úrovně 35 se mapa nemění
  
- Hra se ukonci kdyz had narazi do steny nebo sam do sebe - pripadne ji lze kdykoliv ukoncit stisknutim klavesy Escape.
+ Hra se ukončí když had narazí do stěny nebo sám do sebe - případně ji lze kdykoliv ukončit stisknutím klávesy Escape.
