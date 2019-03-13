@@ -72,16 +72,16 @@ class Snake(QWidget):
                         painter.drawRect(self.p*self.grid_x, self.p*self.grid_y, self.p, self.p)
                     self.grid_x += 1
                 self.grid_y += 1
-            painter.drawText(5, (self.n*self.p + 15), "SKORE: " + str(self.skore) + "           LEVEL: " + str(self.level))
+            painter.drawText(5, (self.n*self.p + 15), "SKÓRE: " + str(self.skore) + "            ÚROVEŇ: " + str(self.level))
         elif self.prohra == 1:
             self.timer1.stop()
             if self.skore > self.high_skore:
                 self.high_skore = self.skore
             painter.setFont(QFont("Default", self.p*self.n/10))
-            painter.drawText(event.rect(), Qt.AlignCenter, "KONEC HRY!\nSKORE: "+str(self.skore))
+            painter.drawText(event.rect(), Qt.AlignCenter, "KONEC HRY!\nSKÓRE: "+str(self.skore))
             painter.setFont(QFont("Default", self.p*self.n/20))
-            painter.drawText(event.rect(), Qt.AlignTop, "Nejvyssi skore: " + str(self.high_skore))
-            painter.drawText(event.rect(), Qt.AlignBottom, "Hrat znovu? [J]o/[N]e")
+            painter.drawText(event.rect(), Qt.AlignTop, "Nejvyšší skóre: " + str(self.high_skore))
+            painter.drawText(event.rect(), Qt.AlignBottom, "Hrát znovu? [Y]es/[N]o")
 
     def keyPressEvent(self, m):
         if self.prohra == 0:
@@ -94,7 +94,7 @@ class Snake(QWidget):
             if m.key() == Qt.Key_S or m.key() == Qt.Key_Down:
                 self.next_state = "D"
         if self.prohra == 1:
-            if m.key() == Qt.Key_J:
+            if m.key() == Qt.Key_Y:
                 self.Setup(n, p)
                 okno.resize((self.n * self.p), (self.n * self.p + 20))
                 okno.center_the_screen()
@@ -199,8 +199,8 @@ class Snake(QWidget):
         for i in range(5, 10):
             for  j in range(5, 10):
                 self.pole[i][j] = -2
-        self.snake_x = 4
-        self.snake_y = 4
+        self.snake_x = 3
+        self.snake_y = 3
         self.rychlost = 200
     def mapa_10(self):
         self.n = 15
